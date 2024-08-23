@@ -1,0 +1,14 @@
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\bin\Debug\net8.0\tl2-tp1-2024-lfcaceres.exe
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\bin\Debug\net8.0\tl2-tp1-2024-lfcaceres.deps.json
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\bin\Debug\net8.0\tl2-tp1-2024-lfcaceres.runtimeconfig.json
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\bin\Debug\net8.0\tl2-tp1-2024-lfcaceres.dll
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\bin\Debug\net8.0\tl2-tp1-2024-lfcaceres.pdb
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.AssemblyInfo.cs
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.dll
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\refint\tl2-tp1-2024-lfcaceres.dll
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.pdb
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\tl2-tp1-2024-lfcaceres.genruntimeconfig.cache
+C:\Users\ADMIN\Repositorio\tl2-tp1-2024-lfcaceres\obj\Debug\net8.0\ref\tl2-tp1-2024-lfcaceres.dll
