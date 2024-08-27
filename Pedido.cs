@@ -8,7 +8,7 @@ Public enum Estado
     Entregado
 }
 
-Public class Pedido
+public class Pedido
 {
     int NumPedido;
     string? Obs;
@@ -23,4 +23,6 @@ Public class Pedido
         clientes = new Cliente(nomb,dir,tel,dat);
         estados = est;
     }
+
+    public Estado GetEstado {get => estados;}
 }
