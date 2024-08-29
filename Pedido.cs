@@ -11,10 +11,13 @@ public enum Estado
 public class Pedido
 {
     int NumPedido;
-    string? Obs;
+    string Obs;
     Cliente clientes;
     Estado estados;
 
+    public Pedido()
+    {
+    }
 
     public Pedido(int num, string obs, Estado est, string nomb, string dir, string tel, string dat) //: Cliente(nomb,dir,tel,dat)
     {

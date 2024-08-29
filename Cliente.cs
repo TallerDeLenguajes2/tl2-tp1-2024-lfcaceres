@@ -1,9 +1,9 @@
 public class Cliente
 {
-    private string? Nombre;
-    private string? Direccion;
-    private string? Telefono;
-    private string? DatosRefDir;
+    private string Nombre;
+    private string Direccion;
+    private string Telefono;
+    private string DatosRefDir;
 
     public Cliente(string nomb, string dir, string tel, string dat)
     {

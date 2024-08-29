@@ -1,16 +1,25 @@
 public class Cadeteria
 {
-    private string? Nombre;
-    private string? Telefono;
+    private string Nombre;
+    private string Telefono;
     private List<Cadete> ListaCadete;
 
-    public Cadeteria(string Nombre, string Telefono)
+    public Cadeteria()
     {
-        Cadete ListaCadete = new List<Cadete>();
+        Nombre = " ";
+        Telefono = " ";
+        ListaCadete = new List<Cadete>();
     }
-    public AgregarCadete(int id,string nombre, string direccion, string telefono)
+
+    public Cadeteria(string nombre, string telefono)
+    {
+        Nombre = nombre;
+        Telefono = telefono;
+        ListaCadete = new List<Cadete>();
+    }
+    public void AgregarCadete(string id,string nombre, string direccion, string telefono)
     {
         Cadete cadete1 = new Cadete(id,nombre,direccion,telefono);
-        ListaCadete.add(cadete1);
+        ListaCadete.Add(cadete1);
     }
 }

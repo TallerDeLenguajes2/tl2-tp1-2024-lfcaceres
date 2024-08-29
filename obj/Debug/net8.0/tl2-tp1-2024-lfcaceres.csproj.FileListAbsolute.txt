@@ -20,3 +20,10 @@ C:/Users/ADMIN/Repositorio/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/ref/tl2-tp1-2
 /Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/tl2-tp1-2024-lfcaceres.dll
 /Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/refint/tl2-tp1-2024-lfcaceres.dll
 /Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/tl2-tp1-2024-lfcaceres.pdb
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/bin/Debug/net8.0/tl2-tp1-2024-lfcaceres
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/bin/Debug/net8.0/tl2-tp1-2024-lfcaceres.deps.json
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/bin/Debug/net8.0/tl2-tp1-2024-lfcaceres.runtimeconfig.json
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/bin/Debug/net8.0/tl2-tp1-2024-lfcaceres.dll
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/bin/Debug/net8.0/tl2-tp1-2024-lfcaceres.pdb
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/tl2-tp1-2024-lfcaceres.genruntimeconfig.cache
+/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/Debug/net8.0/ref/tl2-tp1-2024-lfcaceres.dll
