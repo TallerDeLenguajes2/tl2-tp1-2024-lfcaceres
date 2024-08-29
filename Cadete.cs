@@ -10,6 +10,9 @@ public class Cadete
     public Cadete()
     {
         id=000;
+        nombre = "DEFAULT";
+        direccion = "DEFAULT";
+        telefono = "1234";
         listaPedidos = new List<Pedido>();
     }
     public void AgregarPedido(Pedido pedido)

@@ -1,6 +1,6 @@
 using System.Globalization;
 
-Public enum Estado
+public enum Estado
 {
     Pendiente,
     Enpreparacion,

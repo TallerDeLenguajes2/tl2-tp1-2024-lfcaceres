@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Repositorio\\tl2-tp1-2024-lfcaceres\\tl2-tp1-2024-lfcaceres.csproj": {}
+    "/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/tl2-tp1-2024-lfcaceres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Repositorio\\tl2-tp1-2024-lfcaceres\\tl2-tp1-2024-lfcaceres.csproj": {
+    "/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/tl2-tp1-2024-lfcaceres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Repositorio\\tl2-tp1-2024-lfcaceres\\tl2-tp1-2024-lfcaceres.csproj",
+        "projectUniqueName": "/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/tl2-tp1-2024-lfcaceres.csproj",
         "projectName": "tl2-tp1-2024-lfcaceres",
-        "projectPath": "C:\\Users\\ADMIN\\Repositorio\\tl2-tp1-2024-lfcaceres\\tl2-tp1-2024-lfcaceres.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Repositorio\\tl2-tp1-2024-lfcaceres\\obj\\",
+        "projectPath": "/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/tl2-tp1-2024-lfcaceres.csproj",
+        "packagesPath": "/Users/luisfernandocaceres/.nuget/packages/",
+        "outputPath": "/Users/luisfernandocaceres/tl2-tp1-2024-lfcaceres/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/luisfernandocaceres/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
