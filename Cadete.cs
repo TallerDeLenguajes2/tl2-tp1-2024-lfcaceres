@@ -1,19 +1,27 @@
 
 public class Cadete
 {
-    private int id;
-    private string? nombre;
-    private string? direccion;
-    private string? telefono;
+    private int Id;
+    private string? Nombre;
+    private string? Direccion;
+    private string? Telefono;
     private List<Pedido> listaPedidos;
 
     public Cadete()
     {
-        id=000;
-        nombre = "DEFAULT";
-        direccion = "DEFAULT";
-        telefono = "1234";
-        listaPedidos = new List<Pedido>();
+        Id=000;
+        Nombre = "DEFAULT";
+        Direccion = "DEFAULT";
+        Telefono = "1234";
+        ListaPedidos = new List<Pedido>();
+    }
+    public Cadete(int id,string nombre, string direccion, string telefono)
+    {
+        Id=id;
+        Nombre = nombre;
+        Direccion = direccion;
+        Telefono = telefono;
+        ListaPedidos = new List<Pedido>();
     }
     public void AgregarPedido(Pedido pedido)
     {
