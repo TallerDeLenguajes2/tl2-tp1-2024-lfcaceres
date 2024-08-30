@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 public class Cadeteria
 {
     private string Nombre;
@@ -6,7 +8,7 @@ public class Cadeteria
 
     public Cadeteria()
     {
-        Nombre = " ";
+        Nombre = " POR DEFECTO ";
         Telefono = " ";
         ListaCadete = new List<Cadete>();
     }
@@ -17,9 +19,14 @@ public class Cadeteria
         Telefono = telefono;
         ListaCadete = new List<Cadete>();
     }
+    public string GetNombre{get => Nombre;}
     public void AgregarCadete(string id,string nombre, string direccion, string telefono)
     {
         Cadete cadete1 = new Cadete(id,nombre,direccion,telefono);
         ListaCadete.Add(cadete1);
+    }
+
+    public void AgregarListaCadetes(List<Cadete> listaCadetes){
+        this.ListaCadete = listaCadetes;
     }
 }
