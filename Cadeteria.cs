@@ -5,12 +5,14 @@ public class Cadeteria
     private string Nombre;
     private string Telefono;
     private List<Cadete> ListaCadete;
+    private List<Pedido> listaPedidos;
 
     public Cadeteria()
     {
         Nombre = " POR DEFECTO ";
         Telefono = " ";
         ListaCadete = new List<Cadete>();
+        listaPedidos = new List<Pedido>();
     }
 
     public Cadeteria(string nombre, string telefono)
@@ -18,8 +20,11 @@ public class Cadeteria
         Nombre = nombre;
         Telefono = telefono;
         ListaCadete = new List<Cadete>();
+        listaPedidos = new List<Pedido>();
     }
+
     public string GetNombre{get => Nombre;}
+
     public void AgregarCadete(string id,string nombre, string direccion, string telefono)
     {
         Cadete cadete1 = new Cadete(id,nombre,direccion,telefono);
@@ -28,5 +33,29 @@ public class Cadeteria
 
     public void AgregarListaCadetes(List<Cadete> listaCadetes){
         this.ListaCadete = listaCadetes;
+    }
+
+    public void AgregarPedido(Pedido ped)
+    {
+        if(ped != null)
+        {
+            listaPedidos.Add(ped);
+        }
+    }
+
+    public int CantPedidosCadete(string idCadete){
+        int cant = 0;
+        foreach(var p in listaPedidos)
+        {
+            if((p.IdCadete() == idCadete) && (p.GetEstado == Estado.Entregado))
+            {
+                cant++;
+            } 
+        }
+
+        return cant;
+    }
+    public double JornalACobrar(string idCadete){
+        return ((double)500 * CantPedidosCadete(idCadete));
     }
 }

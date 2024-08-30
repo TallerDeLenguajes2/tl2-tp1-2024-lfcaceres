@@ -1,11 +1,13 @@
 
+using System.Data.Common;
+
 public class Cadete
 {
     private string Id;
     private string? Nombre;
     private string? Direccion;
     private string? Telefono;
-    private List<Pedido> listaPedidos;
+    //
 
     /*public Cadete()
     {
@@ -21,10 +23,11 @@ public class Cadete
         Nombre = nombre;
         Direccion = direccion;
         Telefono = telefono;
-        listaPedidos = new List<Pedido>();
+        //listaPedidos = new List<Pedido>();
     }
-    public void AgregarPedido(Pedido pedido)
+    public string ID { get=> Id;}
+    /*public void AgregarPedido(Pedido pedido)
     {
         this.listaPedidos.Add(pedido);
-    }
+    }*/
 }

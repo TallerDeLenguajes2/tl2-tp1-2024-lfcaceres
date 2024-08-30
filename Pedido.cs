@@ -3,8 +3,6 @@ using System.Globalization;
 public enum Estado
 {
     Pendiente,
-    Enpreparacion,
-    Terminado,
     Entregado
 }
 
@@ -14,6 +12,7 @@ public class Pedido
     string Obs;
     Cliente clientes;
     Estado estados;
+    Cadete? cadete;
 
     public Pedido(int num, string obs, Estado est, string nomb, string dir, string tel, string dat) //: Cliente(nomb,dir,tel,dat)
     {
@@ -24,4 +23,15 @@ public class Pedido
     }
 
     public Estado GetEstado {get => estados;}
+     public void Entregado()
+    {
+        estados = Estado.Entregado;
+    }
+    public void AsignarCadete(Cadete cad)
+    {
+        cadete = cad;
+    }
+    public string IdCadete(){
+        return cadete.ID;
+    }
 }
