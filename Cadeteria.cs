@@ -25,4 +25,8 @@ public class Cadeteria
         Cadete cadete1 = new Cadete(id,nombre,direccion,telefono);
         ListaCadete.Add(cadete1);
     }
+
+    public void AgregarListaCadetes(List<Cadete> listaCadetes){
+        this.ListaCadete = listaCadetes;
+    }
 }

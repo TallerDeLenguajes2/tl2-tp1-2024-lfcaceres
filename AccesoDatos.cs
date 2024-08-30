@@ -36,13 +36,14 @@ public static class AccesoDatos
 
         if(ExisteArchivo(ruta))
         {
-            string linea = "";
             string[] datosCadete;
             
             using StreamReader s = new StreamReader(ruta);
+            string linea = s.ReadLine();
             {
                 while(linea != null)
                 {
+                    
                     datosCadete = linea.Split(',');
                     Cadete cadete = new Cadete(datosCadete[0], datosCadete[1], datosCadete[2], datosCadete[3]);
                     cadetes.Add(cadete);
