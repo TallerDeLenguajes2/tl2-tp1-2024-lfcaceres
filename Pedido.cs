@@ -12,7 +12,7 @@ public class Pedido
     string Obs;
     Cliente clientes;
     Estado estados;
-    Cadete? cadete;
+    Cadete cadete;
 
     public Pedido(int num, string obs, Estado est, string nomb, string dir, string tel, string dat) //: Cliente(nomb,dir,tel,dat)
     {
@@ -20,6 +20,7 @@ public class Pedido
         Obs = obs;
         clientes = new Cliente(nomb,dir,tel,dat);
         estados = est;
+        cadete = new Cadete();
     }
 
     public Estado GetEstado {get => estados;}
@@ -32,6 +33,12 @@ public class Pedido
         cadete = cad;
     }
     public string IdCadete(){
-        return cadete.ID;
+        if (cadete.ID != null)
+        {
+            return cadete.ID;
+        }else{
+            return "";
+        }
+        
     }
 }
