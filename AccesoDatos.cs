@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+
 public abstract class AccesoDatos{
     public abstract Cadeteria ObtenerCadeteria(string rutaDatosCadeteria);
     public abstract List<Cadete> ObtenerCadetes(string rutaDatosCadetes);
@@ -94,4 +95,4 @@ public class AccesoJSON : AccesoDatos
         }
     }
     
-}
+}*/

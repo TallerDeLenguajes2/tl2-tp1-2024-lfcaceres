@@ -1,5 +1,6 @@
 using System.Dynamic;
 
+
 public class Cadeteria
 {
     private string Nombre;
@@ -55,6 +56,23 @@ public class Cadeteria
 
         return cant;
     }
+
+    public Cadete ObtenerCadete(int i)
+    {
+     return this.ListaCadete[i];
+    }
+
+   /* public string[] TotalNombreCadete()
+    {
+        string[] total;
+        int i=0;
+        foreach(Cadete name in this.ListaCadete)
+        {
+            total[i]= name.Nombre;
+            i++;
+        }
+        return total;
+    }*/
     public double JornalACobrar(string idCadete){
         return ((double)500 * CantPedidosCadete(idCadete));
     }
