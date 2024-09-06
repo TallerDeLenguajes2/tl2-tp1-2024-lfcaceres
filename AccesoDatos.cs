@@ -1,17 +1,24 @@
-public static class AccesoDatos
-{
-    private static bool ExisteArchivo(string ruta)
-    {
-        FileInfo f = new FileInfo(ruta); //no necesita invocar la libreria?
-        if (f.Exists && f.Length > 0)
-        {
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+public abstract class AccesoDatos{
+    public abstract Cadeteria ObtenerCadeteria(string rutaDatosCadeteria);
+    public abstract List<Cadete> ObtenerCadetes(string rutaDatosCadetes);
+
+    public bool ExisteArchivo(string ruta){
+        FileInfo f = new FileInfo(ruta);
+
+        if(f.Exists && f.Length > 0){
             return true;
-        }else
-        {
+        }else{
             return false;
         }
     }
-    public static Cadeteria ObtenerCadeteria(string ruta)
+}
+
+public class AccesoCSV : AccesoDatos
+{
+    public override Cadeteria ObtenerCadeteria(string ruta)
     {
         Cadeteria cadeteriaSinInfo = new Cadeteria();
 
@@ -30,7 +37,7 @@ public static class AccesoDatos
         }
     }
 
-    public static List<Cadete> ObtenerCadetes(string ruta)
+    public override List<Cadete> ObtenerCadetes(string ruta)
     {
         List<Cadete> cadetes = new List<Cadete>();
 
@@ -55,4 +62,36 @@ public static class AccesoDatos
         }
         return cadetes;
     }
+    
+}
+
+public class AccesoJSON : AccesoDatos
+{
+    public override Cadeteria ObtenerCadeteria(string rutaDatosCadeteria){
+        string infoCadeteria = File.ReadAllText(rutaDatosCadeteria);
+        Cadeteria cadeteriaConInfo = JsonSerializer.Deserialize<Cadeteria>(infoCadeteria);
+        return cadeteriaConInfo;
+    }
+
+    public override List<Cadete> ObtenerCadetes(string rutaDatosCadetes){
+        string infoCadetes = File.ReadAllText(rutaDatosCadetes);
+        List<Cadete> cadetes = JsonSerializer.Deserialize<List<Cadete>>(infoCadetes);
+        return cadetes;
+    }
+}
+
+/*public static class AccesoDatos
+{
+    private static bool ExisteArchivo(string ruta)
+    {
+        FileInfo f = new FileInfo(ruta); //no necesita invocar la libreria?
+        if (f.Exists && f.Length > 0)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
+    
 }
