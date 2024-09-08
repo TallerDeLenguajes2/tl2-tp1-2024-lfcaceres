@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 Cadeteria Nueva = new Cadeteria();
-Console.WriteLine(Nueva.GetNombre);
+//Console.WriteLine(Nueva.GetNombre);
 
 
 string rutaArchivoDatosCadeteria = "datosCadeteria.csv";
@@ -18,7 +18,7 @@ oca.AgregarListaCadetes(CVS.ObtenerCadetes(rutaArchivoDatosCadetes));
 AccesoDatos JSON = new AccesoJSON();
 Cadeteria oca2 = JSON.ObtenerCadeteria(rutaArchivoDatosCadeteriaJ);
 oca2.AgregarListaCadetes(JSON.ObtenerCadetes(rutaArchivoDatosCadetesJ));
-Console.WriteLine(oca2.GetNombre);
-//Console.WriteLine(oca2.ObtenerCadete(0).Nombre);
+Console.WriteLine(oca2.Nombre);
+Console.WriteLine(oca2.ObtenerCadete(0).Nombre);
 
 

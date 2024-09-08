@@ -33,9 +33,9 @@ public class Pedido
         cadete = cad;
     }
     public string IdCadete(){
-        if (cadete.ID != null)
+        if (cadete.Id != null)
         {
-            return cadete.ID;
+            return cadete.Id;
         }else{
             return "";
         }

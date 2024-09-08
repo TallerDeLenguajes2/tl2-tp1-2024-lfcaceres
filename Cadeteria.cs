@@ -3,28 +3,29 @@ using System.Dynamic;
 
 public class Cadeteria
 {
-    private string Nombre;
-    private string Telefono;
+    private string nombre;
+    private string telefono;
     private List<Cadete> ListaCadete;
     private List<Pedido> listaPedidos;
 
     public Cadeteria()
     {
-        Nombre = " POR DEFECTO ";
-        Telefono = " ";
+        //Nombre = " POR DEFECTO ";
+        //Telefono = " ";
         ListaCadete = new List<Cadete>();
         listaPedidos = new List<Pedido>();
     }
 
     public Cadeteria(string nombre, string telefono)
     {
-        Nombre = nombre;
-        Telefono = telefono;
+        this.Nombre = nombre;
+        this.telefono = telefono;
         ListaCadete = new List<Cadete>();
         listaPedidos = new List<Pedido>();
     }
 
-    public string GetNombre{get => Nombre;}
+    public string Telefono { get => telefono; set => telefono = value; }
+    public string Nombre { get => nombre; set => nombre = value; }
 
     public void AgregarCadete(string id,string nombre, string direccion, string telefono)
     {
