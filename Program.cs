@@ -1,12 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-Cadeteria Nueva = new Cadeteria();
-Console.WriteLine(Nueva.GetNombre);
+
 
 
 string rutaArchivoDatosCadeteria = "datosCadeteria.csv";
 string rutaArchivoDatosCadetes = "datosCadetes.csv";
 
-Cadeteria oca = AccesoDatos.ObtenerCadeteria(rutaArchivoDatosCadeteria); //Verificado
+Cadeteria oca = AccesoDatos.ObtenerCadeteria(rutaArchivoDatosCadeteria);
 List<Cadete> listadoCadetes = AccesoDatos.ObtenerCadetes(rutaArchivoDatosCadetes);
 oca.AgregarListaCadetes(listadoCadetes);
+
+Console.WriteLine(oca.Nombre);
+Console.WriteLine(oca.ExisteCadete("3"));
+
+Pedido p = new Pedido(1,"PEdido 1", "Cliente 1","Avellaneda 111","3817654352", "DATOS");
+oca.AgregarPedidoACadete("3",p);
+oca.CambiarEstadoPedido("3",1);
+//oca.informe();

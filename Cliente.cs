@@ -5,6 +5,10 @@ public class Cliente
     private string Telefono;
     private string DatosRefDir;
 
+    public Cliente()
+    {
+    }
+
     public Cliente(string nomb, string dir, string tel, string dat)
     {
         Nombre=nomb;
