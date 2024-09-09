@@ -15,5 +15,6 @@ Console.WriteLine(oca.ExisteCadete("3"));
 
 Pedido p = new Pedido(1,"PEdido 1", "Cliente 1","Avellaneda 111","3817654352", "DATOS");
 oca.AgregarPedidoACadete("3",p);
-oca.CambiarEstadoPedido("3",1);
+oca.ReasignarPedido("3",1,"1");
+oca.CambiarEstadoPedido("1",1);
 oca.informe();
