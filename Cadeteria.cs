@@ -19,7 +19,7 @@ public class Cadeteria
     public Cadeteria(string nombre, string telefono)
     {
         this.nombre = nombre;
-        telefono = telefono;
+        this.telefono = telefono;
         listaCadete = new List<Cadete>();
     }
     
@@ -108,9 +108,9 @@ public class Cadeteria
             double aux = c.JornalACobrar();
             sumador = sumador + aux;
             
-            Console.WriteLine("Monto Ganado por el cadete:", c.Id);
+            Console.WriteLine("Monto Ganado por el cadete: " + c.Id);
             Console.WriteLine(aux);
-            Console.WriteLine("Cantidad de envios del cadete:", c.Id);
+            Console.WriteLine("Cantidad de envios del cadete: " +c.Id);
             Console.WriteLine(c.CantidadPedidosEntregados());
         }
         Console.WriteLine("Monto Total Ganado");
