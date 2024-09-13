@@ -58,6 +58,7 @@ public class Cadeteria
 
     public bool ExisteCadete(string id)
     {
+        //return(listaCadete.Any(cadete=>cadete.Id==id));
         foreach(var c in listaCadete) 
         {
             if(c.Id == id)
@@ -68,6 +69,7 @@ public class Cadeteria
         return false;
 
     }
+
     public bool ReasignarPedido(string idCadeteActual, int nroPedido, string idCadeteAsginado)
     {
         Pedido aux = new Pedido();
@@ -117,4 +119,5 @@ public class Cadeteria
         Console.WriteLine(sumador);
         
     }
+
 }
